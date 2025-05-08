@@ -1,21 +1,29 @@
+"use client"
 import Image from "next/image";
 import React from "react";
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
+  const router = useRouter();
+  const handleLogoClick = () => {
+    router.push("/"); // Redirect to homepage or any other route
+  };
     return (
     <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-white/30 border-b border-white/20 shadow-lg">
     <div className="max-w-7xl px-4">
     <div className="flex justify-between h-16 items-center">
-      <div className="flex items-center space-x-4">
+      <div 
+      onClick={handleLogoClick}
+      className="flex items-center space-x-4">
       <Image src="icon.svg" alt="Fair Forcast Logo" width={40} height={40} />
       <div className="text-white text-2xl font-extrabold tracking-wide">
-      Fair Forcast
+      Fair Forecast
       </div>
       </div>
       {/* <!-- Nav Links (desktop) --> */}
       <div className="hidden md:flex space-x-8 text-white font-medium">
-      <a href="#" className="hover:text-yellow-300 transition duration-300">Project</a>
-      <a href="#" className="hover:text-yellow-300 transition duration-300">Contact</a>
+      <a href="/summery" className="hover:text-yellow-300 transition duration-300">Project</a>
+      <a href="/research" className="hover:text-yellow-300 transition duration-300">Contact</a>
       </div>
       {/* <!-- Mobile Menu Button --> */}
       <div className="md:hidden">

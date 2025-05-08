@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React from "react";
 
+
 export default function Home() {
   const [pickup, setPickup] = React.useState("");
   const [dropoff, setDropoff] = React.useState("");
@@ -25,7 +26,7 @@ export default function Home() {
       }}
     >
       <div className="bg-white/20 backdrop-blur-xl border border-white/30 p-8 rounded-2xl shadow-2xl w-full max-w-md transition-all duration-300 hover:scale-105">
-        <h2 className="text-3xl font-extrabold mb-6 text-white text-center drop-shadow">Fair Forcast</h2>
+        <h2 className="text-3xl font-extrabold mb-6 text-white text-center drop-shadow">Fair Forecast</h2>
         <form onSubmit={handleSubmit} className="space-y-4">
           <input
             type="text"
