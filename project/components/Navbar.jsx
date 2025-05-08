@@ -14,16 +14,16 @@ const Navbar = () => {
     <div className="flex justify-between h-16 items-center">
       <div 
       onClick={handleLogoClick}
-      className="flex items-center space-x-4">
+      className="flex items-center space-x-4 cursor-pointer">
       <Image src="icon.svg" alt="Fair Forcast Logo" width={40} height={40} />
-      <div className="text-white text-2xl font-extrabold tracking-wide">
+      <div onClick={handleLogoClick} className="text-white text-2xl font-extrabold tracking-wide">
       Fair Forecast
       </div>
       </div>
       {/* <!-- Nav Links (desktop) --> */}
       <div className="hidden md:flex space-x-8 text-white font-medium">
-      <a href="/summery" className="hover:text-yellow-300 transition duration-300">Project</a>
-      <a href="/research" className="hover:text-yellow-300 transition duration-300">Contact</a>
+      <a href="/summary" className="hover:text-yellow-300 transition duration-300">Project</a>
+      <a href="/research" className="hover:text-yellow-300 transition duration-300">Research</a>
       </div>
       {/* <!-- Mobile Menu Button --> */}
       <div className="md:hidden">
