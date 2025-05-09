@@ -22,7 +22,7 @@ const Navbar = () => {
       </div>
       {/* <!-- Nav Links (desktop) --> */}
       <div className="hidden md:flex space-x-8 text-white font-medium">
-      <a href="/summary" className="hover:text-yellow-300 transition duration-300">Project</a>
+      {/* <a href="/summary" className="hover:text-yellow-300 transition duration-300">Project</a> */}
       <a href="/research" className="hover:text-yellow-300 transition duration-300">Research</a>
       </div>
       {/* <!-- Mobile Menu Button --> */}
